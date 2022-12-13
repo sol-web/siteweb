@@ -9,7 +9,7 @@ import { InferGetStaticPropsType } from 'next'
 const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <Container>
-      <div className={`my-5 w-full`}>
+      <div className={`my-5 w-full `}>
         <div className={`relative`}>
           <Image
             src={`/home2.jpg`}
@@ -21,7 +21,7 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
             className={`rounded-3xl`}
           />
           <span
-            className={`absolute top-12 font-extrabold italic text-white text-5xl md:text-9xl text flex justify-center w-full drop-shadow-lg`}
+            className={`absolute top-12 font-extrabold italic text-white text-5xl md:text-9xl text flex justify-center w-full drop-shadow-lg bg-orange-500`}
           >
             {metadata.title}
           </span>
